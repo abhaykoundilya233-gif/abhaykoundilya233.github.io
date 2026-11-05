@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#172b25">
+  <title>Owner Studio — Āraṇyānāṃ Pataye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .cms-panel{width:min(620px,calc(100% - 32px));margin:70px auto;background:#fffdf8;padding:42px;border:1px solid #ddd5c6;text-align:center}
+    .cms-panel h1{font:500 42px/1.15 Georgia,serif;margin:10px 0 14px;color:#172b25}
+    .cms-panel h1 em{color:#9c8253}.cms-panel p{font-size:14px;line-height:1.8;color:#686c62}
+    .cms-steps{text-align:left;line-height:1.9;font-size:13px;color:#4e554b;margin:24px 0}
+    @media(max-width:520px){.cms-panel{padding:28px 20px;margin:35px auto}.cms-panel h1{font-size:34px}}
+  </style>
+</head>
+<body class="admin-body">
+  <header class="admin-topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">Ā</span><span><strong>Āraṇyānāṃ Pataye</strong><small>OWNER STUDIO</small></span></a>
+    <a class="text-link" href="index.html">← View public website</a>
+  </header>
+  <main class="cms-panel">
+    <div class="login-emblem">Ā</div>
+    <p class="eyebrow centered">PRIVATE CONTENT MANAGEMENT</p>
+    <h1>Manage the <em>archive.</em></h1>
+    <p>Article writing and publishing are managed securely through Pages CMS using the GitHub account that has permission to edit this website's repository.</p>
+    <a class="button button-dark full-button" href="https://app.pagescms.org/" target="_blank" rel="noopener">Open Pages CMS ↗</a>
+    <ol class="cms-steps">
+      <li>Sign in to Pages CMS with the GitHub account that owns this website.</li>
+      <li>Allow Pages CMS to access this repository when prompted.</li>
+      <li>Open <strong>Research articles</strong> to create or edit an article.</li>
+      <li>Set its status to <strong>published</strong> when it is ready for readers.</li>
+    </ol>
+    <p class="muted-note">Only people with write access to the GitHub repository can change the website's content. Do not share your GitHub password or give repository write access to people you do not trust.</p>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-bottom"><span>© <span id="year"></span> Āraṇyānāṃ Pataye</span><span>Built for research. Made for discovery.</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

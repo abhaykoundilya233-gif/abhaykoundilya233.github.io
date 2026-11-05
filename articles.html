@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the Āraṇyānāṃ Pataye research archive.">
+  <title>The Archive — Āraṇyānāṃ Pataye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">Ā</span><span><strong>Āraṇyānāṃ Pataye</strong><small>ARCHAEOLOGY OF ĀRYĀVARTA</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a class="active" href="articles.html">The Archive</a><a href="articles.html?category=Inscriptions">Inscriptions</a><a href="articles.html?category=Manuscripts">Manuscripts</a><a href="about.html">About</a></nav>
+    <a class="header-search" href="#archiveSearch">⌕ <span>Search</span></a>
+  </header>
+  <main>
+    <section class="page-masthead">
+      <div class="wrap"><p class="eyebrow"><span class="eyebrow-line"></span> THE RESEARCH LIBRARY</p><h1>Explore the <em>archive.</em></h1><p>Articles, observations and source-led explorations of India's historical record.</p></div>
+    </section>
+    <section class="archive-section wrap">
+      <div class="archive-tools">
+        <label class="search-field" for="archiveSearch"><span>⌕</span><input id="archiveSearch" type="search" placeholder="Search titles, topics, or article text…" autocomplete="off"><kbd>SEARCH</kbd></label>
+        <label class="filter-select"><span class="sr-only">Filter by category</span><select id="categoryFilter"><option value="">All subjects</option><option>Archaeology</option><option>Inscriptions</option><option>Manuscripts</option><option>Coins</option><option>Architecture</option><option>Art & Iconography</option></select></label>
+        <label class="filter-select"><span class="sr-only">Sort articles</span><select id="sortFilter"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="az">Title A–Z</option></select></label>
+      </div>
+      <div class="archive-status"><span id="resultCount">Loading articles…</span><span>INDEPENDENT RESEARCH ARCHIVE</span></div>
+      <div class="article-grid archive-grid" id="articlesContainer"><div class="loading-state">Opening the archive…</div></div>
+      <div class="empty-state hidden" id="emptyState"><span class="empty-symbol">⌕</span><h2>No articles found</h2><p>Try a different keyword or choose another category.</p><button class="button button-outline" id="clearFilters">Clear filters</button></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-top"><a class="brand brand-footer" href="index.html"><span class="brand-mark">Ā</span><span><strong>Āraṇyānāṃ Pataye</strong><small>ARCHAEOLOGY OF ĀRYĀVARTA</small></span></a><p>An independent research archive exploring the material and textual heritage of India.</p><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="admin.html">Owner sign in</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Āraṇyānāṃ Pataye</span><span>Built for research. Made for discovery.</span></div></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
